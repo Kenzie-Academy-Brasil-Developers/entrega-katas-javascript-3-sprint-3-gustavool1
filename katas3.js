@@ -346,10 +346,10 @@ function kataBonus1() {
             let texto = document.createTextNode(i);
             div.appendChild(texto);
             div.style.color ='white'
-            div.style.width='20px';
-            div.style.height='100px';
+            div.style.width='100px';
+            div.style.height='20px';
             div.style.backgroundColor='grey'
-            div.style.display='inline-block'
+
             div.style.margin='10px'
             document.body.appendChild(div)
         })
@@ -434,12 +434,12 @@ function kataBonus5() {
         sampleArray.forEach(function(_item){
             i++
             let div = document.createElement("div");
-            let texto = document.createTextNode(i)
+            let texto = document.createTextNode(_item)
             div.appendChild(texto)
             div.style.color='white'
             div.style.height='20px'    
             div.style.width = _item+'px'
-            if(i%2 === 0){
+            if(_item%2 === 0){
                 div.style.background='red'
             }else{
                 div.style.background='grey'
